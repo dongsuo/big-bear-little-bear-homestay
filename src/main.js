@@ -1,4 +1,8 @@
 import './style.css';
+import { initI18n, setLanguage, getLanguage, t } from './i18n/index.js';
+
+// Initialize i18n before touching any translated content
+initI18n();
 
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-header nav');
@@ -219,3 +223,73 @@ if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox();
 });
+
+// ===== Language switcher =====
+const langSelect = document.getElementById('lang-select');
+if (langSelect) {
+  langSelect.value = getLanguage();
+  langSelect.addEventListener('change', (e) => {
+    setLanguage(e.target.value);
+  });
+}
+
+// ===== Translate dynamic room cards =====
+const roomKeys = [
+  'mario',
+  'tetris',
+  'onepiece',
+  'doraemon',
+  'minions',
+  'peppa',
+  'minecraft',
+];
+const tagMap = {
+  'Nintendo Switch': 'nintendo',
+  'Play tent': 'tent',
+  'Kids amenities': 'kidsAmenities',
+  'Smart toilet': 'smartToilet',
+  'Free Wi-Fi': 'wifi',
+  'Indoor slide': 'slide',
+  'Children toys': 'toys',
+  Telescope: 'telescope',
+  'Large projector': 'projector',
+  Balcony: 'balcony',
+  'Sofa bed': 'sofaBed',
+  'Building blocks': 'blocks',
+};
+
+function translateRooms() {
+  const cards = document.querySelectorAll('.room-card');
+  cards.forEach((card, index) => {
+    const key = roomKeys[index];
+    if (!key) return;
+
+    const nameEl = card.querySelector('h3');
+    const descEl = card.querySelector('.room-desc');
+    const bedDt = card.querySelector('dl dt:first-of-type');
+    const sizeDt = card.querySelector('dl dt:nth-of-type(2)');
+    const bedDd = card.querySelector('dl dd:first-of-type');
+    const sizeDd = card.querySelector('dl dd:nth-of-type(2)');
+    const tags = card.querySelectorAll('.room-tags span');
+    const btn = card.querySelector('.room-button');
+
+    if (nameEl) nameEl.textContent = t(`rooms.${key}.name`);
+    if (descEl) descEl.textContent = t(`rooms.${key}.desc`);
+    if (bedDt) bedDt.textContent = t('rooms.beds');
+    if (sizeDt) sizeDt.textContent = t('rooms.size');
+    if (bedDd) bedDd.textContent = t(`rooms.${key}.beds`);
+    if (sizeDd) sizeDd.textContent = t(`rooms.${key}.size`);
+    if (btn) btn.textContent = t('rooms.book');
+
+    tags.forEach((tag) => {
+      const en = tag.textContent.trim();
+      const labelKey = tagMap[en];
+      if (labelKey) {
+        tag.textContent = t(`rooms.labels.${labelKey}`);
+      }
+    });
+  });
+}
+
+translateRooms();
+document.addEventListener('i18n:updated', translateRooms);

@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
+    <title data-i18n="meta.title">
       Big Bear Little Bear Family Homestay near Shanghai LEGOLAND | Breakfast &
       Transfers Included
     </title>
     <meta
       name="description"
+      data-i18n="meta.description"
       content="Family-friendly homestay 10-minute walk from Shanghai LEGOLAND. Breakfast included, private transfers to LEGOLAND and Jinshan North Station. 7 themed rooms with slide, building blocks, projector, and smart toilets. Rated 9.6/10 by 68 guests on Trip.com."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -303,18 +304,29 @@
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#rooms">Rooms</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#location">Location</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#faq">FAQ</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#rooms" data-i18n="nav.rooms">Rooms</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#location" data-i18n="nav.location">Location</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
       </nav>
+      <select class="lang-select" id="lang-select" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+        <option value="ko">한국어</option>
+        <option value="es">Español</option>
+        <option value="pt">Português</option>
+        <option value="ja">日本語</option>
+        <option value="ru">Русский</option>
+        <option value="th">ไทย</option>
+      </select>
       <a
         class="header-cta"
         href="https://www.trip.com/hotels/detail/?cityEnName=Shanghai&cityId=2&hotelId=132002189"
         target="_blank"
         rel="noopener"
+        data-i18n="nav.book"
         >Book on Trip.com</a
       >
     </header>
@@ -328,11 +340,11 @@
         />
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">
+          <p class="eyebrow" data-i18n="hero.eyebrow">
             Shanghai Jinshan · Family homestay near Shanghai LEGOLAND
           </p>
-          <h1>Big Bear Little Bear Family Homestay</h1>
-          <p class="hero-copy">
+          <h1 data-i18n="hero.title">Big Bear Little Bear Family Homestay</h1>
+          <p class="hero-copy" data-i18n="hero.subtitle">
             A warm, playful base for international families. Breakfast included,
             a 10-minute walk to Shanghai LEGOLAND, and private transfers to the
             park and Jinshan North Railway Station.
@@ -343,28 +355,39 @@
               href="https://www.trip.com/hotels/detail/?cityEnName=Shanghai&cityId=2&hotelId=132002189"
               target="_blank"
               rel="noopener"
+              data-i18n="hero.book"
               >Book on Trip.com</a
             >
-            <a class="button secondary" href="#rooms"
+            <a class="button secondary" href="#rooms" data-i18n="hero.explore"
               >Explore our 7 themed rooms</a
             >
           </div>
         </div>
         <div class="quick-proof">
           <div>
-            <strong>10-min walk</strong><span>to Shanghai LEGOLAND Resort</span>
+            <strong data-i18n="hero.statLegoValue">10-min walk</strong
+            ><span data-i18n="hero.statLegoLabel"
+              >to Shanghai LEGOLAND Resort</span
+            >
           </div>
           <div>
-            <strong>Breakfast included</strong
-            ><span>Chinese-style, family-friendly</span>
+            <strong data-i18n="hero.statBreakfastValue"
+              >Breakfast included</strong
+            ><span data-i18n="hero.statBreakfastLabel"
+              >Chinese-style, family-friendly</span
+            >
           </div>
           <div>
-            <strong>Free transfers</strong
-            ><span>to LEGOLAND & Jinshan North Station</span>
+            <strong data-i18n="hero.statTransferValue">Free transfers</strong
+            ><span data-i18n="hero.statTransferLabel"
+              >to LEGOLAND & Jinshan North Station</span
+            >
           </div>
           <div>
-            <strong>9.6/10 rating</strong
-            ><span>from 68 guest reviews on Trip.com</span>
+            <strong data-i18n="hero.statRatingValue">9.6/10 rating</strong
+            ><span data-i18n="hero.statRatingLabel"
+              >from 68 guest reviews on Trip.com</span
+            >
           </div>
         </div>
       </section>
@@ -372,15 +395,19 @@
       <section class="about band" id="about">
         <div class="about-grid">
           <div>
-            <div class="section-kicker">Built for park days</div>
-            <h2>The easy stay before and after Shanghai LEGOLAND.</h2>
-            <p>
+            <div class="section-kicker" data-i18n="about.kicker">
+              Built for park days
+            </div>
+            <h2 data-i18n="about.title">
+              The easy stay before and after Shanghai LEGOLAND.
+            </h2>
+            <p data-i18n="about.p1">
               Big Bear Little Bear is a family-run homestay in Shanghai's
               Jinshan District, just 1.14 km from Shanghai LEGOLAND Resort. It
               is made for parents who want less logistics, happier children, and
               a calmer night after a full day of rides, shows and walking.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               Opened in 2025 with seven uniquely themed rooms, the homestay
               offers a personal, child-focused experience that standard hotels
               cannot match. Our family hosts are known for warm, responsive
@@ -390,22 +417,26 @@
           </div>
           <div class="promise-list">
             <div class="promise-card">
-              <strong>Breakfast included</strong>
-              <p>
+              <strong data-i18n="about.breakfastTitle"
+                >Breakfast included</strong
+              >
+              <p data-i18n="about.breakfastText">
                 A simple Chinese-style breakfast with local favorites like Babi
                 steamed buns helps everyone leave on time for the park.
               </p>
             </div>
             <div class="promise-card">
-              <strong>Transfers handled</strong>
-              <p>
+              <strong data-i18n="about.transferTitle">Transfers handled</strong>
+              <p data-i18n="about.transferText">
                 Private car service connects you with Shanghai LEGOLAND and
                 Jinshan North Railway Station — just ask the host.
               </p>
             </div>
             <div class="promise-card">
-              <strong>Children feel welcome</strong>
-              <p>
+              <strong data-i18n="about.childrenTitle"
+                >Children feel welcome</strong
+              >
+              <p data-i18n="about.childrenText">
                 Slides, building blocks, toys and themed rooms turn the stay
                 itself into part of the trip.
               </p>
@@ -417,10 +448,14 @@
       <section class="rooms" id="rooms">
         <div class="section-heading">
           <div>
-            <div class="section-kicker">Seven themed rooms</div>
-            <h2>Choose the room that fits your family.</h2>
+            <div class="section-kicker" data-i18n="rooms.kicker">
+              Seven themed rooms
+            </div>
+            <h2 data-i18n="rooms.title">
+              Choose the room that fits your family.
+            </h2>
           </div>
-          <p>
+          <p data-i18n="rooms.subtitle">
             Each room has its own theme and facilities. Room names and
             specifications are matched to the Trip.com listing. Tap any room to
             check availability and book.
@@ -921,10 +956,12 @@
       <section class="gallery band" id="gallery">
         <div class="section-heading">
           <div>
-            <div class="section-kicker">Photo gallery</div>
-            <h2>Take a look around.</h2>
+            <div class="section-kicker" data-i18n="gallery.kicker">
+              Photo gallery
+            </div>
+            <h2 data-i18n="gallery.title">Take a look around.</h2>
           </div>
-          <p>
+          <p data-i18n="gallery.subtitle">
             A glimpse of our themed rooms, shared play areas, and
             family-friendly facilities.
           </p>
@@ -992,37 +1029,45 @@
       <section class="location" id="location">
         <div class="location-grid">
           <div class="location-copy">
-            <div class="section-kicker">Location and transfers</div>
-            <h2>Close enough to make a LEGOLAND day feel simple.</h2>
-            <p>
+            <div class="section-kicker" data-i18n="location.kicker">
+              Location and transfers
+            </div>
+            <h2 data-i18n="location.title">
+              Close enough to make a LEGOLAND day feel simple.
+            </h2>
+            <p data-i18n="location.p1">
               The homestay is approximately 1.14 km from Shanghai LEGOLAND
               Resort — about a 10-minute walk. Private transfer service is
               available for both the resort and Jinshan North Railway Station.
             </p>
             <dl class="route-list">
               <div>
-                <dt>To Shanghai LEGOLAND</dt>
-                <dd>
+                <dt data-i18n="location.legoTitle">To Shanghai LEGOLAND</dt>
+                <dd data-i18n="location.legoDesc">
                   About 10 minutes on foot (1.14 km), or a quick private
                   transfer.
                 </dd>
               </div>
               <div>
-                <dt>To Jinshan North Railway Station</dt>
-                <dd>
+                <dt data-i18n="location.stationTitle">
+                  To Jinshan North Railway Station
+                </dt>
+                <dd data-i18n="location.stationDesc">
                   Private pickup and drop-off can be arranged with the host.
                 </dd>
               </div>
               <div>
-                <dt>Nearby attractions</dt>
-                <dd>
+                <dt data-i18n="location.nearbyTitle">Nearby attractions</dt>
+                <dd data-i18n="location.nearbyDesc">
                   Flying Over Mountains and Seas Flight Experience (3.6 km),
                   Huakai Haishang Ecological Park (2.8 km).
                 </dd>
               </div>
               <div>
-                <dt>For international visitors</dt>
-                <dd>
+                <dt data-i18n="location.visitorsTitle">
+                  For international visitors
+                </dt>
+                <dd data-i18n="location.visitorsDesc">
                   Use the English name "Big Bear Little Bear Family Homestay"
                   and the Chinese name "大熊小熊亲子民宿" when confirming with
                   drivers.
@@ -1043,10 +1088,14 @@
       <section class="reviews band" id="reviews">
         <div class="section-heading">
           <div>
-            <div class="section-kicker">Guest reviews</div>
-            <h2>Rated 9.6/10 by 68 guests on Trip.com.</h2>
+            <div class="section-kicker" data-i18n="reviews.kicker">
+              Guest reviews
+            </div>
+            <h2 data-i18n="reviews.title">
+              Rated 9.6/10 by 68 guests on Trip.com.
+            </h2>
           </div>
-          <p>
+          <p data-i18n="reviews.subtitle">
             No negative reviews in the past 6 months. Guests consistently praise
             the warm hosts, clean rooms, convenient LEGOLAND access, and playful
             room design.
@@ -1055,53 +1104,69 @@
         <div class="rating-overview">
           <div class="rating-score">
             <span class="score">9.6</span>
-            <span class="score-label">out of 10</span>
-            <span class="review-count">68 reviews on Trip.com</span>
+            <span class="score-label" data-i18n="reviews.scoreLabel"
+              >out of 10</span
+            >
+            <span class="review-count" data-i18n="reviews.reviewCount"
+              >68 reviews on Trip.com</span
+            >
           </div>
           <div class="rating-breakdown">
-            <div><span>Cleanliness</span><strong>9.6</strong></div>
-            <div><span>Location</span><strong>9.6</strong></div>
-            <div><span>Service</span><strong>9.6</strong></div>
-            <div><span>Amenities</span><strong>9.5</strong></div>
+            <div>
+              <span data-i18n="reviews.cleanliness">Cleanliness</span
+              ><strong>9.6</strong>
+            </div>
+            <div>
+              <span data-i18n="reviews.location">Location</span
+              ><strong>9.6</strong>
+            </div>
+            <div>
+              <span data-i18n="reviews.service">Service</span
+              ><strong>9.6</strong>
+            </div>
+            <div>
+              <span data-i18n="reviews.amenities">Amenities</span
+              ><strong>9.5</strong>
+            </div>
           </div>
         </div>
         <div class="review-grid">
           <article class="review-card">
-            <span>43 mentions</span>
-            <h3>Service</h3>
-            <p>
+            <span data-i18n="reviews.cards.0.mentions">43 mentions</span>
+            <h3 data-i18n="reviews.cards.0.title">Service</h3>
+            <p data-i18n="reviews.cards.0.text">
               Warm, responsive hosts. Families repeatedly mention friendly help
               and thoughtful service.
             </p>
           </article>
           <article class="review-card">
-            <span>35 mentions</span>
-            <h3>Location</h3>
-            <p>
+            <span data-i18n="reviews.cards.1.mentions">35 mentions</span>
+            <h3 data-i18n="reviews.cards.1.title">Location</h3>
+            <p data-i18n="reviews.cards.1.text">
               Very close to Shanghai LEGOLAND, with convenient transfers to the
               park and station.
             </p>
           </article>
           <article class="review-card">
-            <span>32 mentions</span>
-            <h3>Cleanliness</h3>
-            <p>
+            <span data-i18n="reviews.cards.2.mentions">32 mentions</span>
+            <h3 data-i18n="reviews.cards.2.title">Cleanliness</h3>
+            <p data-i18n="reviews.cards.2.text">
               Clean rooms, tidy bathrooms, and individually packed towels and
               bath linens.
             </p>
           </article>
           <article class="review-card">
-            <span>27 mentions</span>
-            <h3>Facilities</h3>
-            <p>
+            <span data-i18n="reviews.cards.3.mentions">27 mentions</span>
+            <h3 data-i18n="reviews.cards.3.title">Facilities</h3>
+            <p data-i18n="reviews.cards.3.text">
               Projectors, smart toilets, toys, building blocks, and shared play
               areas.
             </p>
           </article>
           <article class="review-card">
-            <span>24 mentions</span>
-            <h3>Room themes</h3>
-            <p>
+            <span data-i18n="reviews.cards.4.mentions">24 mentions</span>
+            <h3 data-i18n="reviews.cards.4.title">Room themes</h3>
+            <p data-i18n="reviews.cards.4.text">
               Minecraft, Mario, Doraemon, Minions, One Piece, Peppa Pig and
               Tetris rooms.
             </p>
@@ -1110,11 +1175,11 @@
       </section>
 
       <section class="faq" id="faq">
-        <div class="section-kicker">FAQ</div>
-        <h2>Frequently asked questions</h2>
+        <div class="section-kicker" data-i18n="faq.kicker">FAQ</div>
+        <h2 data-i18n="faq.title">Frequently asked questions</h2>
         <details open>
-          <summary>Is breakfast included?</summary>
-          <p>
+          <summary data-i18n="faq.q1">Is breakfast included?</summary>
+          <p data-i18n="faq.a1">
             Yes. A Chinese-style breakfast is included for all guests, featuring
             local favorites like Babi steamed buns (巴比馒头). It is simple,
             convenient, and suitable for both adults and children before a park
@@ -1122,26 +1187,30 @@
           </p>
         </details>
         <details>
-          <summary>How far is it from Shanghai LEGOLAND?</summary>
-          <p>
+          <summary data-i18n="faq.q2">
+            How far is it from Shanghai LEGOLAND?
+          </summary>
+          <p data-i18n="faq.a2">
             The homestay is approximately 1.14 km from Shanghai LEGOLAND Resort,
             which is about a 10-minute walk. Private car transfers to the park
             can also be arranged with the host.
           </p>
         </details>
         <details>
-          <summary>
+          <summary data-i18n="faq.q3">
             Can the host pick us up from Jinshan North Railway Station?
           </summary>
-          <p>
+          <p data-i18n="faq.a3">
             Yes. Private transfer service to and from Jinshan North Railway
             Station can be arranged with the host. Transfers to Shanghai
             LEGOLAND are also available.
           </p>
         </details>
         <details>
-          <summary>What facilities are best for children?</summary>
-          <p>
+          <summary data-i18n="faq.q4">
+            What facilities are best for children?
+          </summary>
+          <p data-i18n="faq.a4">
             Children love the indoor slide, building blocks, toys, themed rooms
             (Mario, Minecraft, Doraemon, Minions, Peppa Pig, One Piece, Tetris),
             and shared play areas. Selected rooms also include projectors and
@@ -1149,8 +1218,10 @@
           </p>
         </details>
         <details>
-          <summary>How many rooms does the homestay have?</summary>
-          <p>
+          <summary data-i18n="faq.q5">
+            How many rooms does the homestay have?
+          </summary>
+          <p data-i18n="faq.a5">
             The homestay has 7 uniquely themed rooms across three floors: Mario
             Game Twin Room (60 sqm, 3F), Tetris Slide Twin Room (25 sqm, 2F),
             One Piece Queen Room (25 sqm, 1F), Doraemon Queen Room (20 sqm, 2F),
@@ -1159,16 +1230,20 @@
           </p>
         </details>
         <details>
-          <summary>Where should international guests book?</summary>
-          <p>
+          <summary data-i18n="faq.q6">
+            Where should international guests book?
+          </summary>
+          <p data-i18n="faq.a6">
             The property is listed on Trip.com with a rating of 9.6/10 from 68
             guest reviews. Use the booking button or any room card to check
             availability, prices, and dates.
           </p>
         </details>
         <details>
-          <summary>What are the check-in and check-out times?</summary>
-          <p>
+          <summary data-i18n="faq.q7">
+            What are the check-in and check-out times?
+          </summary>
+          <p data-i18n="faq.a7">
             Check-in is from 14:00 and check-out is until 12:00. The front desk
             is available 24/7, and the host will greet you upon arrival. Self
             check-in is also available — contact the property for the access
@@ -1176,15 +1251,19 @@
           </p>
         </details>
         <details>
-          <summary>Are pets allowed?</summary>
-          <p>Unfortunately, pets are not allowed at the homestay.</p>
+          <summary data-i18n="faq.q8">Are pets allowed?</summary>
+          <p data-i18n="faq.a8">
+            Unfortunately, pets are not allowed at the homestay.
+          </p>
         </details>
       </section>
 
       <section class="final-cta">
         <div>
-          <h2>Ready for a fun family stay near Shanghai LEGOLAND?</h2>
-          <p>
+          <h2 data-i18n="cta.title">
+            Ready for a fun family stay near Shanghai LEGOLAND?
+          </h2>
+          <p data-i18n="cta.subtitle">
             Book your room on Trip.com today. Breakfast, transfers, and themed
             rooms are waiting for your family.
           </p>
@@ -1194,6 +1273,7 @@
           href="https://www.trip.com/hotels/detail/?cityEnName=Shanghai&cityId=2&hotelId=132002189"
           target="_blank"
           rel="noopener"
+          data-i18n="cta.book"
           >Book on Trip.com</a
         >
       </section>
@@ -1202,9 +1282,11 @@
     <footer>
       <div class="footer-grid">
         <div>
-          <p class="footer-brand">Big Bear Little Bear Family Homestay</p>
+          <p class="footer-brand" data-i18n="footer.brand">
+            Big Bear Little Bear Family Homestay
+          </p>
           <p>大熊小熊亲子民宿 · Shanghai Jinshan District</p>
-          <p>
+          <p data-i18n="footer.tagline">
             Family stay near Shanghai LEGOLAND Resort with breakfast, transfers,
             themed rooms and warm local hosts.
           </p>
@@ -1214,10 +1296,11 @@
             href="https://www.trip.com/hotels/detail/?cityEnName=Shanghai&cityId=2&hotelId=132002189"
             target="_blank"
             rel="noopener"
+            data-i18n="footer.book"
             >Book on Trip.com →</a
           >
-          <a href="#rooms">View rooms →</a>
-          <a href="#faq">FAQ →</a>
+          <a href="#rooms" data-i18n="footer.rooms">View rooms →</a>
+          <a href="#faq" data-i18n="footer.faq">FAQ →</a>
         </div>
       </div>
     </footer>
